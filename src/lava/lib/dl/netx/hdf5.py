@@ -260,8 +260,8 @@ class Network(AbstractProcess):
 
         table_entry = Network._table_str(type_str='Input',
                                          width=shape[0],
-                                         height=shape[1],
-                                         channel=shape[2])
+                                         height=1,
+                                         channel=1)
 
         return Input(**params), table_entry
 
